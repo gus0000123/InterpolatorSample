@@ -14,14 +14,78 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setView() {
-        btn_AccelerateDecelerate.setOnClickListener { InterpolatorDialog(this, AccelerateDecelerateInterpolator(), "AccelerateDecelerateInterpolator", et_duration.text.toString()).show() }
-        btn_Accelerate.setOnClickListener { InterpolatorDialog(this, AccelerateInterpolator(), "AccelerateInterpolator", et_duration.text.toString()).show() }
-        btn_Anticipate.setOnClickListener { InterpolatorDialog(this, AnticipateInterpolator(), "AnticipateInterpolator", et_duration.text.toString()).show() }
-        btn_AnticipateOvershoot.setOnClickListener { InterpolatorDialog(this, OvershootInterpolator(), "OvershootInterpolator", et_duration.text.toString()).show() }
-        btn_Bounce.setOnClickListener { InterpolatorDialog(this, BounceInterpolator(), "BounceInterpolator", et_duration.text.toString()).show() }
-        btn_Cycle.setOnClickListener { InterpolatorDialog(this, CycleInterpolator(0.5f), "CycleInterpolator", et_duration.text.toString()).show() }
-        btn_Decelerate.setOnClickListener { InterpolatorDialog(this, DecelerateInterpolator(), "DecelerateInterpolator", et_duration.text.toString()).show() }
-        btn_Linear.setOnClickListener { InterpolatorDialog(this, LinearInterpolator(), "LinearInterpolator", et_duration.text.toString()).show() }
-        btn_Overshoot.setOnClickListener { InterpolatorDialog(this, OvershootInterpolator(), "OvershootInterpolator", et_duration.text.toString()).show() }
+        btn_all.setOnClickListener { InterpolatorCompareDialog(this).show() }
+
+        btn_AccelerateDecelerate.setOnClickListener {
+            InterpolatorDialog(
+                this,
+                AccelerateDecelerateInterpolator(),
+                "AccelerateDecelerateInterpolator",
+                et_duration.text.toString()
+            ).show()
+        }
+
+        btn_Accelerate.setOnClickListener {
+            InterpolatorDialog(
+                this,
+                AccelerateInterpolator(),
+                "AccelerateInterpolator",
+                et_duration.text.toString()
+            ).show()
+        }
+
+        btn_Anticipate.setOnClickListener {
+            InterpolatorDialog(
+                this,
+                AnticipateInterpolator(),
+                "AnticipateInterpolator",
+                et_duration.text.toString()
+            ).show()
+        }
+
+        btn_Overshoot.setOnClickListener {
+            InterpolatorDialog(
+                this,
+                OvershootInterpolator(),
+                "OvershootInterpolator",
+                et_duration.text.toString()
+            ).show()
+        }
+
+        btn_Bounce.setOnClickListener {
+            InterpolatorDialog(
+                this,
+                BounceInterpolator(),
+                "BounceInterpolator",
+                et_duration.text.toString()
+            ).show()
+        }
+
+        btn_Cycle.setOnClickListener {
+            InterpolatorDialog(
+                this,
+                CycleInterpolator(0.5f),
+                "CycleInterpolator",
+                et_duration.text.toString()
+            ).show()
+        }
+
+        btn_Decelerate.setOnClickListener {
+            InterpolatorDialog(
+                this,
+                DecelerateInterpolator(),
+                "DecelerateInterpolator",
+                et_duration.text.toString()
+            ).show()
+        }
+
+        btn_Linear.setOnClickListener {
+            InterpolatorDialog(
+                this,
+                LinearInterpolator(),
+                "LinearInterpolator",
+                et_duration.text.toString()
+            ).show()
+        }
     }
 }

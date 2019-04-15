@@ -9,7 +9,12 @@ import android.view.animation.Interpolator
 import android.widget.Toast
 import kotlinx.android.synthetic.main.dialog_interpolator.*
 
-class InterpolatorDialog(var activity: Activity, var interpolator: Interpolator, var title: String, var duration: String?) : Dialog(activity) {
+class InterpolatorDialog(
+    var activity: Activity,
+    var interpolator: Interpolator,
+    var title: String,
+    var duration: String?
+) : Dialog(activity) {
     var TAG = javaClass.simpleName
     var ANI_DURATION = 1000L
 
@@ -33,14 +38,30 @@ class InterpolatorDialog(var activity: Activity, var interpolator: Interpolator,
 
     private fun startAnimation() {
         var dp = activity.resources.displayMetrics.density
-        btn_trans.animate().translationX(210 * dp).setDuration(ANI_DURATION).setInterpolator(interpolator).start()
-        btn_sacle_up.animate().scaleY(1f).scaleX(1f).setDuration(ANI_DURATION).setInterpolator(interpolator).setStartDelay(ANI_DURATION).start()
-        btn_sacle_down.animate().scaleY(0.1f).scaleX(0.1f).setDuration(ANI_DURATION).setInterpolator(interpolator).setStartDelay(ANI_DURATION).start()
-        btn_alpha_up.animate().alpha(1f).setDuration(ANI_DURATION).setInterpolator(interpolator).setStartDelay(ANI_DURATION * 2).start()
-        btn_alpha_down.animate().alpha(0.1f).setDuration(ANI_DURATION).setInterpolator(interpolator).setStartDelay(ANI_DURATION * 2).start()
-        btn_rot_X.animate().rotationX(180f).setDuration(ANI_DURATION).setInterpolator(interpolator).setStartDelay(ANI_DURATION * 3).start()
-        btn_rot_Y.animate().rotationY(180f).setDuration(ANI_DURATION).setInterpolator(interpolator).setStartDelay(ANI_DURATION * 3).start()
-        btn_rot_XY.animate().rotationX(180f).rotationY(180f).setDuration(ANI_DURATION).setStartDelay(ANI_DURATION * 3).setInterpolator(interpolator).start()
+        btn_trans.animate().translationX(260 * dp).setDuration(ANI_DURATION)
+            .setInterpolator(interpolator).start()
+
+        btn_sacle_up.animate().scaleY(1f).scaleX(1f).setDuration(ANI_DURATION)
+            .setInterpolator(interpolator).setStartDelay(ANI_DURATION).start()
+
+        btn_sacle_down.animate().scaleY(0.1f).scaleX(0.1f).setDuration(ANI_DURATION)
+            .setInterpolator(interpolator).setStartDelay(ANI_DURATION).start()
+
+        btn_alpha_up.animate().alpha(1f).setDuration(ANI_DURATION)
+            .setInterpolator(interpolator).setStartDelay(ANI_DURATION * 2).start()
+
+        btn_alpha_down.animate().alpha(0.1f).setDuration(ANI_DURATION)
+            .setInterpolator(interpolator).setStartDelay(ANI_DURATION * 2).start()
+
+        btn_rot_X.animate().rotationX(180f).setDuration(ANI_DURATION)
+            .setInterpolator(interpolator).setStartDelay(ANI_DURATION * 3).start()
+
+        btn_rot_Y.animate().rotationY(180f).setDuration(ANI_DURATION)
+            .setInterpolator(interpolator).setStartDelay(ANI_DURATION * 3).start()
+
+        btn_rot_XY.animate().rotationX(180f).rotationY(180f).setDuration(ANI_DURATION)
+            .setStartDelay(ANI_DURATION * 3).setInterpolator(interpolator).start()
+
     }
 
     private fun init() {

@@ -56,8 +56,8 @@
 
                 <Button
                     android:id="@+id/btn_trans"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/rectangle_red"
                     app:layout_constraintBottom_toBottomOf="parent"

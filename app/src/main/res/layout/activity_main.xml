@@ -17,6 +17,12 @@
             android:hint="set Duraion for Animation (only Long)" />
 
         <Button
+            android:id="@+id/btn_all"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="전체 Interpolator 비교" />
+
+        <Button
             android:id="@+id/btn_AccelerateDecelerate"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -35,10 +41,10 @@
             android:text="Anticipate" />
 
         <Button
-            android:id="@+id/btn_AnticipateOvershoot"
+            android:id="@+id/btn_Overshoot"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="AnticipateOvershoot" />
+            android:text="Overshoot" />
 
         <Button
             android:id="@+id/btn_Bounce"
@@ -64,11 +70,6 @@
             android:layout_height="60dp"
             android:text="Linear" />
 
-        <Button
-            android:id="@+id/btn_Overshoot"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="Overshoot" />
 
     </LinearLayout>
 </ScrollView>
