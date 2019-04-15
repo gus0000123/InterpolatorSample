@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_duration"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="set Duraion for Animation (only Long)" />
+
+        <Button
+            android:id="@+id/btn_AccelerateDecelerate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="AccelerateDecelerate" />
+
+        <Button
+            android:id="@+id/btn_Accelerate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Accelerate" />
+
+        <Button
+            android:id="@+id/btn_Anticipate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Anticipate" />
+
+        <Button
+            android:id="@+id/btn_AnticipateOvershoot"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="AnticipateOvershoot" />
+
+        <Button
+            android:id="@+id/btn_Bounce"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Bounce" />
+
+        <Button
+            android:id="@+id/btn_Cycle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Cycle" />
+
+        <Button
+            android:id="@+id/btn_Decelerate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Decelerate" />
+
+        <Button
+            android:id="@+id/btn_Linear"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Linear" />
+
+        <Button
+            android:id="@+id/btn_Overshoot"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Overshoot" />
+
+    </LinearLayout>
+</ScrollView>
