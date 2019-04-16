@@ -49,9 +49,6 @@ class InterpolatorCompareDialog(
 
         btn_Linear.animate().translationX(260 * dp).setDuration(ANI_DURATION)
             .setInterpolator(LinearInterpolator()).start()
-
-        btn_Overshoot.animate().translationX(260 * dp).setDuration(ANI_DURATION)
-            .setInterpolator(OvershootInterpolator()).start()
     }
 
     private fun init() {
