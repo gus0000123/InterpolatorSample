@@ -20,7 +20,7 @@ class InterpolatorCompareDialog(
         window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         btn_start.setOnClickListener { init() }
-        startAnimation()
+//        startAnimation()
     }
 
     private fun startAnimation() {
@@ -42,7 +42,7 @@ class InterpolatorCompareDialog(
             .setInterpolator(BounceInterpolator()).start()
 
         btn_Cycle.animate().translationX(260 * dp).setDuration(ANI_DURATION)
-            .setInterpolator(CycleInterpolator(0.5f)).start()
+            .setInterpolator(CycleInterpolator(1f)).start()
 
         btn_Decelerate.animate().translationX(260 * dp).setDuration(ANI_DURATION)
             .setInterpolator(DecelerateInterpolator()).start()

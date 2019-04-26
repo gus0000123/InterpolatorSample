@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         btn_Cycle.setOnClickListener {
             InterpolatorDialog(
                 this,
-                CycleInterpolator(0.5f),
+                CycleInterpolator(1f),
                 "CycleInterpolator",
                 et_duration.text.toString()
             ).show()

@@ -33,7 +33,7 @@ class InterpolatorDialog(
 
         btn_start.setOnClickListener { init() }
         tv_title.text = title
-        startAnimation()
+//        startAnimation()
     }
 
     private fun startAnimation() {
